@@ -16,10 +16,14 @@ function App() {
   //   };
   // }, []);
 
+  useEffect(() => {
+    console.log("useEffect");
+  });
+
   return (
     <>
       <h1>Hello App</h1>   
-      <Counter />  
+      {/* <Counter />   */}
     </>
   );
   
