@@ -11,7 +11,10 @@ export default function Counter() {
 
   return (
     <>
-      <h1 style={{display:"none"}}>Hello Counter-{count}</h1>
+      {
+        count>5 ? <h2>this is sub</h2> : null
+      }
+      <h1>Hello Counter-{count}</h1>
      
       <button onClick={handleClick}>click plus</button>
     </>
